@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="dashboard">
+            <!--<div class="box">
+                <div class="day">Дата</div>
+                <div class="cont">
+                    <div class="day1 name">name</div>
+                    <div class="day1 time">start</div>
+                    <div class="day1 time">finish</div>
+                    <div class="day1">wr</div>
+                    <div class="day1">del</div>
+                </div>
+            </div>-->
+        </div>
+        <div class="middle container">
+            <form class="addevent" id="createEventForm">
+                <h4>Добавить Мероприятие</h1>
+                <div class="form-row">  
+                    <div class="col-md-6 ">
+                        <lable for="name">Название</lable>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div class="col-md-6">
+                        <lable for="date">Дата</lable>
+                        <input type="date" class="date form-control" name="date">
+                    </div>
+                </div>
+                <div class="form-row">  
+                    <div class="col-md-6">
+                        <lable for="time_start">Время начала</lable>
+                        <input type="time" class="time_start form-control" name="time_start" min="09:00" max="17:59">
+                    </div>
+                    <div class="col-md-6">
+                        <lable for="time_finish">Время конца</lable>
+                        <input type="time" class="time_finish form-control" name="time_finish" min="09:01" max="18:00">
+                    </div>
+                </div>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-warning" id="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.16.0/dist/jquery.validate.min.js"></script>
+    <script src="validate.js"></script>
+    <script src="event.js"></script>
+
+</html>
